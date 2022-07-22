@@ -1,0 +1,22 @@
+<%- include('includes/head') %>
+<main class="w-full h-screen bg-green-100 flex flex-col justify-center items-center">
+    
+    <form class="w-[370px] p-4 rounded-xl bg-white" action="/edit/<%= editUser.id %>" method="post">
+        <h1 class="text-center mb-4 font-semibold">Засах</h1>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Username" id="username" value="<%= editUser.username %>"  class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4 ">
+
+        <label for="email">Email</label>
+        <input value="<%= editUser.email %>" id="email" type="text" name="email" placeholder="Email" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+
+        <label for="avatar">Avatar</label>
+        <input value="<%= editUser.avatar %>" type="text" id="avatar" name="avatar" placeholder="Avatar" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+
+        <label for="password">Password</label>
+        <input value="<%= editUser.password %>" id="password" type="password" name="password" placeholder="Password" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+
+        <input type="submit" value="Шинэчлэх" class="py-2 px-4 bg-green-500 text-white rounded-md w-full cursor-pointer duration-300 hover:bg-green-700">
+    </form>
+    <a href="/"><button class="w-[370px] mt-8 bg-gray-300 flex justify-center items-center border border-black-50 rounded-lg shadow-lg shadow-black-600 ease-in duration-300 hover:bg-gray-400 hover:shadow-none">Буцах</button></a>
+</main>
+<%- include('includes/foot') %>

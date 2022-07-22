@@ -1,0 +1,13 @@
+<%- include('includes/head') %>
+<main class="w-full h-screen bg-gray-300 flex flex-col justify-center items-center">
+    <form class="w-[370px] p-4 rounded-xl bg-white" action="/register" method="post">
+        <h1 class="text-center font-semibold text-xl mb-2">Хэрэглэгч үүсгэх</h1>
+        <input type="text" name="username" placeholder="Username" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+        <input type="text" name="email" placeholder="Email" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+        <input type="text" name="avatar" placeholder="Avatar" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+        <input type="password" name="password" placeholder="Password" class="py-2 px-4 bg-gray-100 rounded-md w-full border mb-4">
+        <input type="submit" value="Бүртгэх" class="py-2 px-4 bg-indigo-500 text-white rounded-md w-full hover:bg-indigo-700">
+    </form>
+    <a href="/"><button class="w-[370px] mt-8 bg-gray-400 flex justify-center items-center border border-black-50 rounded-lg shadow-lg shadow-gray-800 ease-in duration-300 hover:bg-gray-600 hover:shadow-none hover:text-white">Буцах</button></a>
+</main>
+<%- include('includes/foot') %>
